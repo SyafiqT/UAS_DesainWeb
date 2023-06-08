@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.112.5">
+    <title>FC Barcelona</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/headers/">
+
+    
+
+    
+
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+  .b-example-divider {
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+  .b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+  }
+  .bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+  }
+  .nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+  }
+  .nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+  .btn-bd-primary {
+    --bd-violet-bg: #712cf9;
+    --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: var(--bd-violet-bg);
+    --bs-btn-border-color: var(--bd-violet-bg);
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: #6528e0;
+    --bs-btn-hover-border-color: #6528e0;
+    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: #5a23c8;
+    --bs-btn-active-border-color: #5a23c8;
+  }
+  .bd-mode-toggle {
+    z-index: 1500;
+  }
+  .nav-link.active {
+    border-bottom: 1px solid rgb(52, 100, 255);
+  }
+  body {
+    background-image: url('gambar/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .header {
+    position: relative;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 10px;
+    padding-left: 20px;
+  }
+  .content {
+    color: #ffffff;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+
+  th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+
+  th {
+    background-color: #0014cca1;
+    font-weight: bold;
+  }
+
+  .text-end {
+    margin-right: 20px;
+    font-family: 'Tahoma';
+    color: #ffd61f;
+  }
+
+  td img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    width: 20px;
+  }
+  .image-container {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 45px;
+}
+
+.image-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 15px;
+}
+
+.image-container:hover .image-caption {
+  opacity: 1;
+}
+
+.p1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+  margin: 0;
+  font-family:'sans-serif';
+  font-size: 50px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #ffd61f;
+  font-size: 100px;
+}
+h2 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #ffd61f;
+    font-size: 100px;
+}
+</style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="css/headers.css" rel="stylesheet">
+  </head>
+  <body>
+
+<main>
+  <div class="container">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom header">
+      <div class="col-md-3 mb-2 mb-md-0">
+        <a class="d-inline-flex link-body-emphasis text-decoration-none">
+          <svg class="bi" width="60" height="60" role="img" aria-label="">
+            <image href="gambar/584a9b3bb080d7616d298777.png" width="60" height="60" />
+          </svg>
+        </a>
+      </div>
+      
+  
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="home1.html" class="nav-link px-2" style="font-size: 24px;">Home</a></li>
+        <li><a href="home2.html" class="nav-link px-2-secondary active" style="font-size: 24px;">Squad</a></li>
+        <li><a href="pendaftaran.html" class="nav-link px-2" style="font-size: 24px;">Team Registration</a></li>
+      </ul>
+  
+      <div class="col-md-3 text-end">
+        <div style="display: flex; flex-direction: column;">
+          <span style="font-size: 16px; font-weight: bold;">Mes que</span>
+          <span style="font-size: 16px; font-weight: bold;">Un Club</span>
+        </div>
+        <a href="index.html" class="btn btn-primary" style="margin-top: 10px;">Log-out</a>
+      </div>
+    </header>
+  </div>
+  
+  <main class="container content">
+    <h1>Goalkeeper</h1>
+    <figure class="image-container">
+        <img src="gambar/player/01-MARC-ANDRE_TER_STEGEN.webp" alt="Ter Stegen">
+        <figcaption class="image-caption">
+            <p class="p1">Ter Stegen (1)</p>
+            <table>
+              <tr>
+                <th>App</th>
+                <th>Clean Sheets</th>
+                <th>Saves</th>
+              </tr>
+              <tr>
+                <td>48</td>
+                <td>26</td>
+                <td>94</td>
+              </tr>
+            </table>
+          </figcaption>
+      </figure>
+
+      <figure class="image-container">
+        <img src="gambar/player/26-INAKI_PENA.webp" alt="Inaki Pena">
+        <figcaption class="image-caption">
+            <p class="p1">Inaki Pena (26)</p>
+            <table>
+              <tr>
+                <th>App</th>
+                <th>Clean Sheets</th>
+                <th>Saves</th>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>0</td>
+                <td>2</td>
+              </tr>
+            </table>
+          </figcaption>
+      </figure>
+
+      <h2>Defender</h2>
+      <figure class="image-container">
+          <img src="gambar/player/04-RONALD_ARAUJO_.webp" alt="Araujo">
+          <figcaption class="image-caption">
+              <p class="p1">Ronald Araujo (4)</p>
+              <table>
+                <tr>
+                  <th>App</th>
+                  <th>Goals</th>
+                  <th>Assists</th>
+                </tr>
+                <tr>
+                  <td>31</td>
+                  <td>1</td>
+                  <td>2</td>
+                </tr>
+              </table>
+            </figcaption>
+        </figure>
+  
+        <figure class="image-container">
+          <img src="gambar/player/15-ANDREAS_CHRISTENSEN.webp" alt="Christensen">
+          <figcaption class="image-caption">
+              <p class="p1">A. Christensen (15)</p>
+              <table>
+                <tr>
+                  <th>App</th>
+                  <th>Goals</th>
+                  <th>Assists</th>
+                </tr>
+                <tr>
+                  <td>30</td>
+                  <td>1</td>
+                  <td>1</td>
+                </tr>
+              </table>
+            </figcaption>
+        </figure>
+
+        <figure class="image-container">
+            <img src="gambar/player/17-MARCOS_ALONSO.webp" alt="Alonso">
+            <figcaption class="image-caption">
+                <p class="p1">Marcos Alonso (17)</p>
+                <table>
+                  <tr>
+                    <th>App</th>
+                    <th>Goals</th>
+                    <th>Assists</th>
+                  </tr>
+                  <tr>
+                    <td>35</td>
+                    <td>3</td>
+                    <td>0</td>
+                  </tr>
+                </table>
+              </figcaption>
+        </figure>
+
+        <figure class="image-container">
+            <img src="gambar/player/18-JORDI_ALBA.webp" alt="Jordi Alba">
+            <figcaption class="image-caption">
+                <p class="p1">Jordi Alba (18)</p>
+                <table>
+                  <tr>
+                    <th>App</th>
+                    <th>Goals</th>
+                    <th>Assists</th>
+                  </tr>
+                  <tr>
+                    <td>29</td>
+                    <td>2</td>
+                    <td>4</td>
+                  </tr>
+                </table>
+              </figcaption>
+        </figure>
+
+        <figure class="image-container">
+            <img src="gambar/player/23-JULES_KOUNDE.webp" alt="Kounde">
+            <figcaption class="image-caption">
+                <p class="p1">J. Kounde (23)</p>
+                <table>
+                  <tr>
+                    <th>App</th>
+                    <th>Goals</th>
+                    <th>Assists</th>
+                  </tr>
+                  <tr>
+                    <td>38</td>
+                    <td>1</td>
+                    <td>5</td>
+                  </tr>
+                </table>
+              </figcaption>
+        </figure>
+
+        <figure class="image-container">
+            <img src="gambar/player/24-ERIC_GARCIA.webp" alt="E. Garcia">
+            <figcaption class="image-caption">
+                <p class="p1">Eric Garcia (24)</p>
+                <table>
+                  <tr>
+                    <th>App</th>
+                    <th>Goals</th>
+                    <th>Assists</th>
+                  </tr>
+                  <tr>
+                    <td>30</td>
+                    <td>1</td>
+                    <td>1</td>
+                  </tr>
+                </table>
+              </figcaption>
+        </figure>
+
+        <h2>Midfielder</h2>
+      <figure class="image-container">
+          <img src="gambar/player/05-SERGIO_.webp" alt="Sergio">
+          <figcaption class="image-caption">
+              <p class="p1">Sergio Busquets (5)</p>
+              <table>
+                <tr>
+                  <th>App</th>
+                  <th>Goals</th>
+                  <th>Assists</th>
+                </tr>
+                <tr>
+                  <td>41</td>
+                  <td>0</td>
+                  <td>4</td>
+                </tr>
+              </table>
+            </figcaption>
+        </figure>
+  
+        <figure class="image-container">
+          <img src="gambar/player/08-PEDRI.webp" alt="Pedri">
+          <figcaption class="image-caption">
+              <p class="p1">Pedri (8)</p>
+              <table>
+                <tr>
+                  <th>App</th>
+                  <th>Goals</th>
+                  <th>Assists</th>
+                </tr>
+                <tr>
+                  <td>35</td>
+                  <td>7</td>
+                  <td>1</td>
+                </tr>
+              </table>
+            </figcaption>
+        </figure>
+
+        <figure class="image-container">
+            <img src="gambar/player/19-FRANCK_KESSIE.webp" alt="Kessie">
+            <figcaption class="image-caption">
+                <p class="p1">F. Kessie (19)</p>
+                <table>
+                  <tr>
+                    <th>App</th>
+                    <th>Goals</th>
+                    <th>Assists</th>
+                  </tr>
+                  <tr>
+                    <td>42</td>
+                    <td>3</td>
+                    <td>1</td>
+                  </tr>
+                </table>
+              </figcaption>
+        </figure>
+
+        <figure class="image-container">
+            <img src="gambar/player/20-S_ROBERTO.webp" alt="S. Roberto">
+            <figcaption class="image-caption">
+                <p class="p1">S. Roberto (20)</p>
+                <table>
+                  <tr>
+                    <th>App</th>
+                    <th>Goals</th>
+                    <th>Assists</th>
+                  </tr>
+                  <tr>
+                    <td>31</td>
+                    <td>4</td>
+                    <td>3</td>
+                  </tr>
+                </table>
+              </figcaption>
+        </figure>
+
+        <figure class="image-container">
+            <img src="gambar/player/21-FRENKIE_DE_JONG.webp" alt="Frenkie">
+            <figcaption class="image-caption">
+                <p class="p1">F. De Jong (21)</p>
+                <table>
+                  <tr>
+                    <th>App</th>
+                    <th>Goals</th>
+                    <th>Assists</th>
+                  </tr>
+                  <tr>
+                    <td>41</td>
+                    <td>2</td>
+                    <td>4</td>
+                  </tr>
+                </table>
+              </figcaption>
+        </figure>
+
+        <figure class="image-container">
+            <img src="gambar/player/30-GAVI_.webp" alt="Gavi">
+            <figcaption class="image-caption">
+                <p class="p1">Gavi (30)</p>
+                <table>
+                  <tr>
+                    <th>App</th>
+                    <th>Goals</th>
+                    <th>Assists</th>
+                  </tr>
+                  <tr>
+                    <td>47</td>
+                    <td>2</td>
+                    <td>5</td>
+                  </tr>
+                </table>
+              </figcaption>
+        </figure>
+
+        <h2>Forward</h2>
+      <figure class="image-container">
+          <img src="gambar/player/07-OUSMANE_DEMBELE.webp" alt="Dembele">
+          <figcaption class="image-caption">
+              <p class="p1">O. Dembele (7)</p>
+              <table>
+                <tr>
+                  <th>App</th>
+                  <th>Goals</th>
+                  <th>Assists</th>
+                </tr>
+                <tr>
+                  <td>33</td>
+                  <td>8</td>
+                  <td>9</td>
+                </tr>
+              </table>
+            </figcaption>
+        </figure>
+  
+        <figure class="image-container">
+          <img src="gambar/player/09-ROBERT_LEWANDOWSKI.webp" alt="Lewandowski">
+          <figcaption class="image-caption">
+              <p class="p1">R. Lewandowski (9)</p>
+              <table>
+                <tr>
+                  <th>App</th>
+                  <th>Goals</th>
+                  <th>Assists</th>
+                </tr>
+                <tr>
+                  <td>44</td>
+                  <td>33</td>
+                  <td>8</td>
+                </tr>
+              </table>
+            </figcaption>
+        </figure>
+
+        <figure class="image-container">
+            <img src="gambar/player/10-ANSU_FATI.webp" alt="Ansu Fati">
+            <figcaption class="image-caption">
+                <p class="p1">Ansu Fati (10)</p>
+                <table>
+                  <tr>
+                    <th>App</th>
+                    <th>Goals</th>
+                    <th>Assists</th>
+                  </tr>
+                  <tr>
+                    <td>49</td>
+                    <td>7</td>
+                    <td>3</td>
+                  </tr>
+                </table>
+              </figcaption>
+        </figure>
+
+        <figure class="image-container">
+            <img src="gambar/player/11-FERRAN_TORRES.webp" alt="F. Torres">
+            <figcaption class="image-caption">
+                <p class="p1">Ferran Torres (11)</p>
+                <table>
+                  <tr>
+                    <th>App</th>
+                    <th>Goals</th>
+                    <th>Assists</th>
+                  </tr>
+                  <tr>
+                    <td>43</td>
+                    <td>7</td>
+                    <td>3</td>
+                  </tr>
+                </table>
+              </figcaption>
+        </figure>
+
+        <figure class="image-container">
+            <img src="gambar/player/22-RAPHINHA.webp" alt="Raphinha">
+            <figcaption class="image-caption">
+                <p class="p1">Raphinha (22)</p>
+                <table>
+                  <tr>
+                    <th>App</th>
+                    <th>Goals</th>
+                    <th>Assists</th>
+                  </tr>
+                  <tr>
+                    <td>48</td>
+                    <td>10</td>
+                    <td>10</td>
+                  </tr>
+                </table>
+              </figcaption>
+        </figure>
+  </main>
+  
+  
+  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+</html>
